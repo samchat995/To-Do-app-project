@@ -9,6 +9,7 @@ def load_tasks():
             return json.load(f)
     return []
 
+
 # Save tasks to file
 def save_tasks(tasks):
     with open("tasks.json", "w") as f:
@@ -22,6 +23,7 @@ def show_tasks(tasks):
         print("\n📌 Your To-Do List:")
         for i, task in enumerate(tasks, start=1):
             print(f"{i}. {task}")
+
 
 # Main program loop
 def main():
@@ -64,11 +66,13 @@ def main():
         else:
             print("❌ Invalid choice! Please enter 1, 2 or 3.")
 
+
 if __name__ == "__main__":
     main()
 
 
 print("welcome")
+
 
 
 
